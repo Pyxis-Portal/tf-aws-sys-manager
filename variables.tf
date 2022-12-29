@@ -6,7 +6,6 @@ variable "create_ssm_parameter" {
 
 variable "name_ssm_parameter" {
   description = "(Required) Name of the parameter. If the name contains a path (e.g., any forward slashes (/)), it must be fully qualified with a leading forward slash (/). For additional requirements and constraints, see the AWS SSM User Guide."
-  default     = ""
   type        = string
 }
 variable "value_ssm_parameter" {
@@ -16,7 +15,6 @@ variable "value_ssm_parameter" {
 }
 variable "type_ssm_parameter" {
   description = "(Required) Type of the parameter. Valid types are String, StringList and SecureString"
-  default     = null
   type        = string
 }
 variable "description_ssm_parameter" {
